@@ -278,3 +278,9 @@ btnNext.addEventListener('click', goToNextQuestion);
 
 // Restart the Quiz
 btnRestart.addEventListener('click', init);
+
+//////////////////////////////////////////////////////
+// Automically set current year of the project
+
+const currentYear = new Date().getFullYear();
+document.querySelector('.year').textContent = currentYear;

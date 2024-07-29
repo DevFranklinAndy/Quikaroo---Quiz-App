@@ -26,7 +26,9 @@ html {
   grid-template-columns: 1fr 1fr;
   background-color: #333;
   min-height: 100vh;
+  position: relative;
 }
+
 
 .container figure {
   background-image: url(./img/side-img.jpg);
@@ -292,6 +294,19 @@ html {
 .score span {
   color: #999;
   font-weight: 700;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 1.2rem;
+}
+
+footer span {
+  color: #7cbb41;
 }
 
 /* Breakpoints */
