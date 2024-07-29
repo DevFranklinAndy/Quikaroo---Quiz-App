@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/quikaroo-favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Quikaroo --- The Quiz App</title>
+  </head>
+  <body>
+    <main class="container">
+      <figure
+        role="img"
+        aria-label="Image of a Woman guessing an answer to a question"
+      ></figure>
+
+      <article class="quiz-area">
+        <!-- This is the quiz settings section: Starting the Quiz -->
+        <section class="welcome-container">
+          <!-- Quiz Title -->
+          <h1 class="quiz-title"><span>Qui</span>karoo</h1>
+          <p class="quiz-subtitle">Test your knowledge</p>
+
+          <!-- Quiz Settings -->
+          <div class="setting-quiz-data">
+            <label for="num-questions">Number of Questions:</label>
+            <select id="num-questions">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <label for="category">Select Category:</label>
+            <select id="category">
+              <option value="">any category</option>
+              <option value="9">general knowledge</option>
+              <option value="10">books</option>
+              <option value="11">films</option>
+              <option value="12">music</option>
+              <option value="14">television</option>
+              <option value="15">video games</option>
+              <option value="16">board games</option>
+              <option value="17">science and nature</option>
+              <option value="18">computers</option>
+              <option value="19">mathematics</option>
+              <option value="20">mythology</option>
+              <option value="21">sports</option>
+              <option value="22">geography</option>
+              <option value="23">history</option>
+              <option value="24">politics</option>
+              <option value="25">art</option>
+              <option value="28">vehicles</option>
+            </select>
+            <label for="difficulty">Select difficulty:</label>
+            <select id="difficulty">
+              <option value="">any difficulty</option>
+              <option value="easy">easy</option>
+              <option value="medium">medium</option>
+              <option value="hard">hard</option>
+            </select>
+            <label for="time">Select time per question:</label>
+            <select id="time">
+              <option value="10">10 seconds</option>
+              <option value="15">15 seconds</option>
+              <option value="20">20 seconds</option>
+              <option value="25">25 seconds</option>
+              <option value="30">30 seconds</option>
+              <option value="60">60 seconds</option>
+            </select>
+          </div>
+
+          <button class="btn btn--start">Start Quiz</button>
+        </section>
+
+        <!-- This is the questions and answers section: Quiz is ongoing -->
+        <section class="quiz-container hidden">
+          <!-- Countdown Progress Timer -->
+          <div class="countdown-progress">
+            <div class="countdown-progress-bar"></div>
+            <span class="countdown">--</span>
+          </div>
+
+          <!-- Question -->
+          <div class="question-wrapper">
+            <p class="question-indicator">Question 1/<span>10</span></p>
+            <p class="question-text">
+              The islands with Coral Covered Surfaces in Bay of Bengal are
+              Surfaces in Bay of Bengal are
+            </p>
+          </div>
+
+          <!-- Answer -->
+          <div class="answer-wrapper">
+            <div class="answer selected">
+              <span class="answer-text">Liverpool</span>
+              <span class="checkbox">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="check"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <button class="btn btn--submit" disabled>Submit Answer</button>
+          <button class="btn btn--next">Next Question</button>
+        </section>
+
+        <!-- Display the final score: Quiz ends here and users can restart -->
+        <section class="final-score-container hidden">
+          <div class="score-board">
+            <p class="text-remark">Congratulations!</p>
+            <img
+              src="img/hurray-img.png"
+              alt="An AI generated 3d Hurray Cartoon"
+            />
+            <h2 class="score-percentage"><span>90%</span> Score</h2>
+            <p class="text-completed">Quiz completed successfully.</p>
+            <p class="score">
+              You attempted <span>60 questions</span> and from that
+              <span>55 answers</span> is correct.
+            </p>
+          </div>
+          <button class="btn btn--restart">Restart Quiz</button>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
