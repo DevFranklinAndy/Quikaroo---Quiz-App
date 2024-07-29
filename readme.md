@@ -22,7 +22,7 @@ Quikaroo is a dynamic quiz application built using HTML, CSS, and JavaScript (DO
 To run this project locally, follow these steps:
 
 1. Clone the repository using git bash:
-   git clone https://github.com/yourusername/quikaroo.git
+   git clone [https://github.com/yourusername/quikaroo.git](https://github.com/DevFranklinAndy/Quikaroo---Quiz-App)
 2. Navigate to the project directory:
    cd quikaroo
 3. Open index.html in your preferred web browser:
