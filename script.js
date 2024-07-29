@@ -252,7 +252,7 @@ const displayFinalScore = function () {
 
   labelScorePercentage.innerHTML = `<span class="${
     percentage >= 75 ? 'congrat' : percentage >= 50 ? 'nice' : 'oopsey'
-  }">${percentage}%</span> Score`;
+  }">${percentage.toFixed(1)}%</span> Score`;
 
   labelScore.innerHTML = `You attempted <span>${questions.length} questions</span> and from that
               <span>${score} answer(s)</span> is correct.`;
