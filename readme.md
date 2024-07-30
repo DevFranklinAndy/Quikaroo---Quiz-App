@@ -1,4 +1,5 @@
 # Quikaroo Quiz Application
+## [Project Link](https://quikaroo-quiz-app.vercel.app) 
 
 Quikaroo is a dynamic quiz application built using HTML, CSS, and JavaScript (DOM Manipulation). It leverages the Open Trivia DB API to fetch and display questions and answers. Users can start a quiz, answer questions, view their scores, and restart the quiz as needed.
 
@@ -22,7 +23,7 @@ Quikaroo is a dynamic quiz application built using HTML, CSS, and JavaScript (DO
 To run this project locally, follow these steps:
 
 1. Clone the repository using git bash:
-   git clone [https://github.com/yourusername/quikaroo.git](https://github.com/DevFranklinAndy/Quikaroo---Quiz-App)
+   git clone [Quikaroo---Quiz-App](https://github.com/DevFranklinAndy/Quikaroo---Quiz-App)
 2. Navigate to the project directory:
    cd quikaroo
 3. Open index.html in your preferred web browser:
